@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '>= 5.0.0.rc1', '< 5.1'
 gem 'puma', '~> 3.0'
@@ -15,7 +14,7 @@ gem 'foundation-rails', '~> 6.2.1.0'
 gem 'haml-rails', '~> 0.9.0'
 
 # Supplejack dependencies
-gem 'supplejack_client', github: 'git@github.com:DigitalNZ/supplejack_client.git'
+gem 'supplejack_client', '~> 1.0.5'
 
 group :development, :test do
   gem 'byebug', platform: :mri
