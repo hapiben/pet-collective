@@ -21,7 +21,6 @@ group :development, :test do
   gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
   # Needs to be in development to automagically create specs when using rails g
   gem 'rspec-rails', '~> 3.5.0.beta4'
-  gem 'rubocop', '~> 0.40.0', require: false
 end
 
 group :development do
@@ -31,22 +30,6 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'better_errors', '~> 2.1.1'
   gem 'binding_of_caller', '~> 0.7.2'
-end
-
-group :test do
-  gem 'cucumber-rails', '~> 1.4.3', require: false
-  gem 'database_cleaner', '~> 1.5.3'
-  gem 'site_prism', '~> 2.9'
-  gem 'vcr', '~> 3.0.1'
-  gem 'rails-controller-testing', '~> 0.1.1'
-  gem 'selenium-webdriver', '~> 2.53'
-  gem 'factory_girl_rails', '~> 4.7'
-  gem 'faker', '~> 1.6', '>= 1.6.3'
-  gem 'shoulda-matchers', '~> 3.1', '>= 3.1.1'
-  gem 'launchy', '~> 2.4.3'
-  gem 'webmock', '~> 2.0.3'
-  gem 'capybara-webkit', '~> 1.11', '>= 1.11.1'
-  gem 'simplecov', '~> 0.11.2', require: false
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

@@ -1,0 +1,6 @@
+.media-object
+  .media-object-section
+    = image_tag record.thumbnail_url, class: 'thumbnail'
+  .media-object-section
+    %h4= record.title
+    %p= truncate(record.description, length: 450)
