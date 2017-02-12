@@ -2,16 +2,16 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '>= 5.0.0.rc1', '< 5.1'
-gem 'puma', '~> 3.0'
 
 # UI/Assets
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
-gem 'jquery-rails', '~> 4.1.1'
-gem 'turbolinks', '~> 5.x'
 gem 'foundation-rails', '~> 6.2.1.0'
 gem 'haml-rails', '~> 0.9.0'
+gem 'jquery-rails', '~> 4.1.1'
+gem 'puma', '~> 3.0'
+gem 'sass-rails', '~> 5.0'
+gem 'turbolinks', '~> 5.x'
+gem 'uglifier', '>= 1.3.0'
 
 # Supplejack dependencies
 gem 'supplejack_client', '~> 1.0.5'
@@ -24,12 +24,12 @@ group :development, :test do
 end
 
 group :development do
-  gem 'web-console'
+  gem 'better_errors', '~> 2.1.1'
+  gem 'binding_of_caller', '~> 0.7.2'
   gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
-  gem 'better_errors', '~> 2.1.1'
-  gem 'binding_of_caller', '~> 0.7.2'
+  gem 'web-console'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
